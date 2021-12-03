@@ -10,7 +10,7 @@ export var allBooks: Book[] = [
         „Sve čega se dotaknemo i što pogledamo, donosi nam znanja“, kaže pesnikinja pokazajući nam da je priroda put do avanture, ali istovremeno i put do osećanja.
         Upoznajte se sa hvalisavim zečevima, saznajte otkud mače u džepu, izvolite na izložbu dece slikara, rešavajte zagonetke i uživajte u bajkovitoj poemi o zlatnom leptiru.
         Ovo nisu samo pesme namenjene deci već i svima koji se iskreno raduju životu.`,
-        picture: "zlatni_leptir_vv.jpg",
+        image: "zlatni_leptir_vv.jpg",
         promotion: false,
         rating: 4,
         comments: [
@@ -29,7 +29,7 @@ export var allBooks: Book[] = [
         „Sve čega se dotaknemo i što pogledamo, donosi nam znanja“, kaže pesnikinja pokazajući nam da je priroda put do avanture, ali istovremeno i put do osećanja.
         Upoznajte se sa hvalisavim zečevima, saznajte otkud mače u džepu, izvolite na izložbu dece slikara, rešavajte zagonetke i uživajte u bajkovitoj poemi o zlatnom leptiru.
         Ovo nisu samo pesme namenjene deci već i svima koji se iskreno raduju životu.`,
-        picture: "zlatni_leptir_vv.jpg",
+        image: "zlatni_leptir_vv.jpg",
         promotion: false,
         rating: 4,
         comments: [
@@ -48,7 +48,7 @@ export var allBooks: Book[] = [
         „Sve čega se dotaknemo i što pogledamo, donosi nam znanja“, kaže pesnikinja pokazajući nam da je priroda put do avanture, ali istovremeno i put do osećanja.
         Upoznajte se sa hvalisavim zečevima, saznajte otkud mače u džepu, izvolite na izložbu dece slikara, rešavajte zagonetke i uživajte u bajkovitoj poemi o zlatnom leptiru.
         Ovo nisu samo pesme namenjene deci već i svima koji se iskreno raduju životu.`,
-        picture: "zlatni_leptir_vv.jpg",
+        image: "zlatni_leptir_vv.jpg",
         promotion: false,
         rating: 4,
         comments: [
@@ -67,7 +67,7 @@ export var allBooks: Book[] = [
         „Sve čega se dotaknemo i što pogledamo, donosi nam znanja“, kaže pesnikinja pokazajući nam da je priroda put do avanture, ali istovremeno i put do osećanja.
         Upoznajte se sa hvalisavim zečevima, saznajte otkud mače u džepu, izvolite na izložbu dece slikara, rešavajte zagonetke i uživajte u bajkovitoj poemi o zlatnom leptiru.
         Ovo nisu samo pesme namenjene deci već i svima koji se iskreno raduju životu.`,
-        picture: "zlatni_leptir_vv.jpg",
+        image: "zlatni_leptir_vv.jpg",
         promotion: false,
         rating: 4,
         comments: [
@@ -86,7 +86,7 @@ export var allBooks: Book[] = [
         „Sve čega se dotaknemo i što pogledamo, donosi nam znanja“, kaže pesnikinja pokazajući nam da je priroda put do avanture, ali istovremeno i put do osećanja.
         Upoznajte se sa hvalisavim zečevima, saznajte otkud mače u džepu, izvolite na izložbu dece slikara, rešavajte zagonetke i uživajte u bajkovitoj poemi o zlatnom leptiru.
         Ovo nisu samo pesme namenjene deci već i svima koji se iskreno raduju životu.`,
-        picture: "zlatni_leptir_vv.jpg",
+        image: "zlatni_leptir_vv.jpg",
         promotion: false,
         rating: 4,
         comments: [

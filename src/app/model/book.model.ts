@@ -4,7 +4,7 @@ export class Book {
     pages: number;
     year: number;
     description: string;
-    picture: string;
+    image: string;
     promotion: boolean;
     rating: number;
     comments: [

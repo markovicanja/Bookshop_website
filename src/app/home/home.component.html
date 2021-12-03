@@ -1,0 +1,17 @@
+<div class="slider-container">
+    <span (click)="prev()" class="control-prev-btn">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+
+    <div id="slider-container" class="slider"> 
+        <div class="slide" *ngFor="let book of allBooks">
+            <img src="../../assets/{{ book.image }}">
+            <div class="title">{{ book.title }}</div>
+            <div class="author">{{ book.author }}</div>
+        </div>        
+    </div>
+
+    <span (click)="next()" class="control-next-btn">
+        <i class="fas fa-chevron-right"></i>
+    </span>
+</div>
