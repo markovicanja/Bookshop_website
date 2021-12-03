@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { allUsers } from '../data/users';
+import { User } from '../model/user.model';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +10,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  username: string;
+  password: string;
+  msg: string;
+  allUsers: User[];
 
   ngOnInit(): void {
+    if (JSON.parse(localStorage.getItem("user")) != null) {
+      this.router.navigate(["home"]);
+    }
+    this.allUsers = allUsers;
+    this.username = "";
+    this.password = "";
+  }
+
+  login() {
+    this.msg = "";
+    if (this.username == "" || this.password == "") {
+      this.msg = "Morate popuniti sva polja.";
+      return;
+    }
+    let user = allUsers.find(user => user.username == this.username && user.password == this.password);
+    if (user == null) {
+      this.msg = "Neispravni kredencijali.";
+      return;
+    }
+    localStorage.setItem('user', JSON.stringify(user));
+    window.location.reload();
   }
 
 }

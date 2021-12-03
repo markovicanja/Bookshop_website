@@ -1,6 +1,44 @@
 <div class="header-img">
-  <img src="assets/header.jpg" style="width: 100%;">
+  <img src="assets/header.jpg" style="width: 100%;" (click)="home()">
 </div>
+
+<nav class="navbar navbar-expand-xl navbar-light" style="background-color: #EFEFEF;" *ngIf="loggedUser != null">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <a routerLink='/profile' class="ml-3 navbar-brand">
+      {{ loggedUser.username }}
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+    <ul class="nav navbar-nav ml-auto" *ngIf="loggedUser.type=='prodavac'">
+      <li class="nav-item">
+        <a routerLink='/addBook' class="btn btn-light ml-auto mt-1 mb-1">DODAJ KNJIGU</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink='/search' class="btn btn-light ml-auto mt-1 mb-1">PRETRAGA</a>
+      </li>
+      <button (click)="logout()" class="btn btn-light ml-auto mt-1 mb-1">
+        ODJAVI SE
+      </button>       
+    </ul> 
+
+    <ul class="nav navbar-nav ml-auto" *ngIf="loggedUser.type=='kupac'">
+      <li class="nav-item">
+        <a routerLink='/recommendations' class="btn btn-light ml-auto mt-1 mb-1">PREPORUKE</a>
+      </li>
+      <button (click)="logout()" class="btn btn-light ml-auto mt-1 mb-1">
+        ODJAVI SE
+      </button>    
+    </ul> 
+
+  </div>
+
+</nav>
 
 <!-- Content -->
 <router-outlet></router-outlet>
