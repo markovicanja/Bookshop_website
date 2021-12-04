@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { ChangeDataComponent } from './change-data/change-data.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     HomeComponent,
     ProfileComponent,
     ChangeDataComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

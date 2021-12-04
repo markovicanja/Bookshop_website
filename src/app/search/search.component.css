@@ -1,0 +1,16 @@
+.title {
+    font-weight: 600;
+    font-size: x-large;
+    margin-top: 5px;
+    width: max-content !important;
+}
+.author {
+    font-weight: 100;
+    font-size: x-large;
+    color: #000369; 
+    margin-bottom: 5px;
+    width: max-content !important;
+}
+img {
+    width: 100px;
+}

@@ -1,0 +1,27 @@
+<h5 class="text-center m-3" style="font-weight: 400;">Pretraga knjiga po jednom ili po oba kriterijuma</h5>
+<div class='container mt-4 text-center' style="max-width: 400px">
+    <form action="" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Naslov" [(ngModel)]='title' name="title">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Autor" [(ngModel)]='author' name="author">
+        </div>
+        <input type="submit" class="btn btn-primary" value="PRETRAŽI" (click)='search()'>
+    </form>
+</div>
+
+<div class='container mt-4' style="max-width: 600px;" *ngIf="books.length != 0">
+    <hr>
+    <div *ngFor="let book of books">
+        <div class="my-4">
+            <div class="d-flex" style="padding: 0px 150px;" (click)="bookDetails(book)">
+                <img src="../../assets/{{ book.image }}">
+                <div class="m-3">
+                    <div class="title">{{ book.title }}</div>
+                    <div class="author">{{ book.author }}</div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
