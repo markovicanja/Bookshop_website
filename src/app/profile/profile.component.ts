@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { User } from '../model/user.model';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  user: User;
 
   ngOnInit(): void {
+    this.user = JSON.parse(localStorage.getItem("user"));
+  }
+
+  changeData() {
+    this.router.navigate(["changeData"]);
+  }
+
+  changePassword() {
+    this.router.navigate(["changePassword"]);
   }
 
 }
