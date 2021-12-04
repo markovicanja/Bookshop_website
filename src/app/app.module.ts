@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ChangeDataComponent } from './change-data/change-data.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { SearchComponent } from './search/search.component';
+import { AddBookComponent } from './add-book/add-book.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SearchComponent } from './search/search.component';
     ProfileComponent,
     ChangeDataComponent,
     ChangePasswordComponent,
-    SearchComponent
+    SearchComponent,
+    AddBookComponent
   ],
   imports: [
     BrowserModule,

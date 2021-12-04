@@ -1,0 +1,30 @@
+<h5 class="text-center m-3" style="font-weight: 400;">Dodavanje knjige</h5>
+<div class='container mt-4 text-center' style="max-width: 400px">
+    <form action="" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Naslov" [(ngModel)]='title' name="title">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Autor" [(ngModel)]='author' name="author">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Godina izdanja" [(ngModel)]='year' name="year">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Broj strana" [(ngModel)]='pages' name="pages">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Slika" [(ngModel)]='image' name="image">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Opis" rows="3" name="description" [(ngModel)]="description"></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary" value="DODAJ" (click)='add()'>
+    </form>
+</div>
+<div class="text-center text-danger mt-2">
+    <p>{{ msg }}</p>
+</div>
+<div class="text-center text-success mt-2">
+    <p>{{ successMsg }}</p>
+</div>
