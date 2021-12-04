@@ -21,7 +21,13 @@ export class LoginComponent implements OnInit {
     if (JSON.parse(localStorage.getItem("user")) != null) {
       this.router.navigate(["home"]);
     }
-    this.allUsers = allUsers;
+    if (localStorage.getItem("allUsers") == "") {
+      this.allUsers = allUsers;
+      localStorage.setItem("allUsers", JSON.stringify(this.allUsers)); 
+    }
+    else {
+      this.allUsers = JSON.parse(localStorage.getItem("allUsers"));
+    }    
     this.username = "";
     this.password = "";
   }
@@ -32,7 +38,7 @@ export class LoginComponent implements OnInit {
       this.msg = "Morate popuniti sva polja.";
       return;
     }
-    let user = allUsers.find(user => user.username == this.username && user.password == this.password);
+    let user = this.allUsers.find(user => user.username == this.username && user.password == this.password);
     if (user == null) {
       this.msg = "Neispravni kredencijali.";
       return;

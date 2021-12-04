@@ -18,12 +18,19 @@ export class HomeComponent implements OnInit {
   promotionBooks: Book[];
 
   ngOnInit(): void {
-    this.allBooks = allBooks;
+    if (localStorage.getItem("allBooks") == null) {
+      this.allBooks = allBooks;
+      localStorage.setItem("allBooks", JSON.stringify(this.allBooks));
+    }
+    else {
+      this.allBooks = JSON.parse(localStorage.getItem("allBooks"));
+    }    
     this.promotionBooks = [];
     this.allBooks.forEach(book => {
       if (book.promotion) this.promotionBooks.push(book);
     });
     this.user = JSON.parse(localStorage.getItem("user"));
+    if (this.user == null) this.router.navigate(["login"]);
   }
 
   prev() {

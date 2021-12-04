@@ -15,6 +15,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.user = JSON.parse(localStorage.getItem("user"));
+    if (this.user == null) this.router.navigate(["login"]);
   }
 
   changeData() {
