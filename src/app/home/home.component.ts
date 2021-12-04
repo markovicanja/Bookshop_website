@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { allBooks } from '../data/books';
 import { Book } from '../model/book.model';
 import { User } from '../model/user.model';
@@ -10,7 +11,7 @@ import { User } from '../model/user.model';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   user: User;
   allBooks: Book[];
@@ -39,6 +40,11 @@ export class HomeComponent implements OnInit {
 
   nextPromotion() {
     document.getElementById('promotion-slider-container').scrollLeft += 270;
+  }
+
+  bookDetails(book: Book) {
+    localStorage.setItem("book", JSON.stringify(book));
+    this.router.navigate(["bookDetails"]);
   }
 
 }

@@ -4,10 +4,12 @@
     </span>
 
     <div id="slider-container" class="slider"> 
-        <div class="slide" *ngFor="let book of allBooks">
-            <img src="../../assets/{{ book.image }}">
-            <div class="title">{{ book.title }}</div>
-            <div class="author">{{ book.author }}</div>
+        <div *ngFor="let book of allBooks">
+            <div class="slide" (click)="bookDetails(book)">
+                <img src="../../assets/{{ book.image }}">
+                <div class="title">{{ book.title }}</div>
+                <div class="author">{{ book.author }}</div>
+            </div>
         </div>        
     </div>
 
@@ -24,10 +26,12 @@
         </span>
     
         <div id="promotion-slider-container" class="slider"> 
-            <div class="slide" *ngFor="let book of promotionBooks">
-                <img src="../../assets/{{ book.image }}">
-                <div class="title">{{ book.title }}</div>
-                <div class="author">{{ book.author }}</div>
+            <div *ngFor="let book of promotionBooks">
+                <div class="slide" (click)="bookDetails(book)">
+                    <img src="../../assets/{{ book.image }}">
+                    <div class="title">{{ book.title }}</div>
+                    <div class="author">{{ book.author }}</div>
+                </div>                
             </div>        
         </div>
     

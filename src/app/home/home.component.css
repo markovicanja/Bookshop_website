@@ -13,7 +13,7 @@
     display: none;
 }
 .slide {
-    margin: 1rem 50px;
+    margin: 1rem 30px;
     width: 250px !important;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@
     color: #000369; 
 }
 .promotion-container .slide {
-    margin: 1rem 65px;
+    margin: 1rem 45px;
 }
 .promotion-container .control-prev-btn, .control-next-btn {
     margin: 0 1em;
