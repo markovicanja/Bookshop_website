@@ -14,9 +14,14 @@ export class HomeComponent implements OnInit {
 
   user: User;
   allBooks: Book[];
+  promotionBooks: Book[];
 
   ngOnInit(): void {
     this.allBooks = allBooks;
+    this.promotionBooks = [];
+    this.allBooks.forEach(book => {
+      if (book.promotion) this.promotionBooks.push(book);
+    });
     this.user = JSON.parse(localStorage.getItem("user"));
   }
 
@@ -24,7 +29,16 @@ export class HomeComponent implements OnInit {
     document.getElementById('slider-container').scrollLeft -= 270;
   }
 
+  prevPromotion() {
+    document.getElementById('promotion-slider-container').scrollLeft -= 270;
+  }
+
   next() {
     document.getElementById('slider-container').scrollLeft += 270;
   }
+
+  nextPromotion() {
+    document.getElementById('promotion-slider-container').scrollLeft += 270;
+  }
+
 }

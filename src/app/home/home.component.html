@@ -15,3 +15,25 @@
         <i class="fas fa-chevron-right"></i>
     </span>
 </div>
+
+<div class="promotion-container">
+    <h2 class="text-center pt-3"><i>P R O M O C I J A</i></h2>
+    <div class="slider-container">
+        <span (click)="prevPromotion()" class="control-prev-btn">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+    
+        <div id="promotion-slider-container" class="slider"> 
+            <div class="slide" *ngFor="let book of promotionBooks">
+                <img src="../../assets/{{ book.image }}">
+                <div class="title">{{ book.title }}</div>
+                <div class="author">{{ book.author }}</div>
+            </div>        
+        </div>
+    
+        <span (click)="nextPromotion()" class="control-next-btn">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+    </div>
+</div>
+

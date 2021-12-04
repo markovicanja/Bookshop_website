@@ -35,6 +35,7 @@
     font-weight: 600;
     font-size: x-large;
     margin-top: 5px;
+    width: max-content !important;
 }
 .author {
     font-weight: 100;
@@ -42,4 +43,16 @@
     color: #000369; 
     margin-bottom: 5px;
     width: max-content !important;
+}
+.promotion-container {
+    background-color: #F6F6F6;
+}
+.promotion-container h2 {
+    color: #000369; 
+}
+.promotion-container .slide {
+    margin: 1rem 65px;
+}
+.promotion-container .control-prev-btn, .control-next-btn {
+    margin: 0 1em;
 }
