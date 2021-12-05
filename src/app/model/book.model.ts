@@ -1,3 +1,5 @@
+import { Comment } from "./comment.model";
+
 export class Book {
     title: string;
     author: string;
@@ -7,10 +9,5 @@ export class Book {
     image: string;
     promotion: boolean;
     rating: number;
-    comments: [
-        {
-            name: string;
-            comment: string;
-        }
-    ]
+    comments: Comment[]
 }

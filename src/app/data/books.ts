@@ -30,7 +30,7 @@ export var allBooks: Book[] = [
         image: "zanimljiva_istorija_srba_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Mi protiv vas",
@@ -41,7 +41,7 @@ export var allBooks: Book[] = [
         image: "mi_protiv_vas_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Dajana: Njena ispovest",
@@ -52,7 +52,7 @@ export var allBooks: Book[] = [
         image: "dajana_njena_ispovest_vv.jpg",
         promotion: true,
         rating: 4,
-        comments: null
+        comments: []
     },
     { 
         title: "Izgubljena sestra",
@@ -65,7 +65,7 @@ export var allBooks: Book[] = [
         image: "izgubljena_sestra_vv.jpg",
         promotion: false,
         rating: 5,
-        comments: null
+        comments: []
     },
     { 
         title: "Moj deka je bio trešnja",
@@ -76,7 +76,7 @@ export var allBooks: Book[] = [
         image: "moj_deka_je_bio_tresnja_andjela_naneti.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Čovek po imenu Uve",
@@ -87,7 +87,7 @@ export var allBooks: Book[] = [
         image: "covek_po_imenu_uve_vv.jpg",
         promotion: false,
         rating: 5,
-        comments: null
+        comments: []
     },
     { 
         title: "Forest Gamp",
@@ -98,7 +98,7 @@ export var allBooks: Book[] = [
         image: "forest_gamp_vv.jpg",
         promotion: false,
         rating: 4,
-        comments: null
+        comments: []
     },
     { 
         title: "E, zabole me",
@@ -109,7 +109,7 @@ export var allBooks: Book[] = [
         image: "e_zabole_me_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Zanimljiva istorija Srba",
@@ -120,7 +120,7 @@ export var allBooks: Book[] = [
         image: "zanimljiva_istorija_srba_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Nisam kriva",
@@ -131,7 +131,7 @@ export var allBooks: Book[] = [
         image: "nisam_kriva_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Đubre",
@@ -142,7 +142,7 @@ export var allBooks: Book[] = [
         image: "djubre_vv.jpg",
         promotion: true,
         rating: 5,
-        comments: null
+        comments: []
     },
     { 
         title: "Zanimljiva istorija Srba",
@@ -153,7 +153,7 @@ export var allBooks: Book[] = [
         image: "zanimljiva_istorija_srba_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Deca zla",
@@ -165,7 +165,7 @@ export var allBooks: Book[] = [
         image: "deca_zla_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Bajni svete, gde si ti",
@@ -176,7 +176,7 @@ export var allBooks: Book[] = [
         image: "bajni_svete_gde_si_ti_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Neki drugi život",
@@ -187,7 +187,7 @@ export var allBooks: Book[] = [
         image: "neki_drugi_zivot_vv.jpg",
         promotion: true,
         rating: 5,
-        comments: null
+        comments: []
     },
     { 
         title: "Reka sa četiri ušća",
@@ -198,7 +198,7 @@ export var allBooks: Book[] = [
         image: "reka_sa_cetiri_usca_vv.jpg",
         promotion: true,
         rating: 2,
-        comments: null
+        comments: []
     },
     { 
         title: "Semper idem",
@@ -209,7 +209,7 @@ export var allBooks: Book[] = [
         image: "semper_idem_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Žena bližnjega tvoga",
@@ -220,7 +220,7 @@ export var allBooks: Book[] = [
         image: "zena_bliznjega_tvoga_vv.jpg",
         promotion: true,
         rating: 3,
-        comments: null
+        comments: []
     },
     { 
         title: "Una",
@@ -231,7 +231,7 @@ export var allBooks: Book[] = [
         image: "una_vv.jpg",
         promotion: true,
         rating: 5,
-        comments: null
+        comments: []
     },
     { 
         title: "Zamalek",
@@ -242,6 +242,6 @@ export var allBooks: Book[] = [
         image: "zamalek_vv.jpg",
         promotion: true,
         rating: 5,
-        comments: null
+        comments: []
     },
 ]

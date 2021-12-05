@@ -11,6 +11,8 @@ import { ChangeDataComponent } from './change-data/change-data.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { SearchComponent } from './search/search.component';
 import { AddBookComponent } from './add-book/add-book.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
+import { RecommendComponent } from './recommend/recommend.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AddBookComponent } from './add-book/add-book.component';
     ChangeDataComponent,
     ChangePasswordComponent,
     SearchComponent,
-    AddBookComponent
+    AddBookComponent,
+    BookDetailsComponent,
+    RecommendComponent
   ],
   imports: [
     BrowserModule,
