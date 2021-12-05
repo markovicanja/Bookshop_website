@@ -25,7 +25,7 @@ export class BookDetailsComponent implements OnInit {
   }
 
   recommend() {
-    this.router.navigate(["recommendations"]);
+    this.router.navigate(["recommend"]);
   }
 
   setPromotion(promote) {

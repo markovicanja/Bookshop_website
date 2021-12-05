@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { RecommendComponent } from './recommend/recommend.component';
+import { RecommendationsComponent } from './recommendations/recommendations.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RecommendComponent } from './recommend/recommend.component';
     SearchComponent,
     AddBookComponent,
     BookDetailsComponent,
-    RecommendComponent
+    RecommendComponent,
+    RecommendationsComponent
   ],
   imports: [
     BrowserModule,
