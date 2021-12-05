@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { allRecommendations } from '../data/recommendations';
-import { Recommendations } from '../model/recommendations.model';
+import { Book } from '../model/book.model';
+import { Recommendation, Recommendations } from '../model/recommendations.model';
 import { User } from '../model/user.model';
 
 @Component({
@@ -15,7 +16,7 @@ export class RecommendationsComponent implements OnInit {
 
   user: User;
   allRecommendations: Recommendations[];
-  userRecommendations: Recommendations[];
+  userRecommendations: Recommendation[];
 
   ngOnInit(): void {
     this.user = JSON.parse(localStorage.getItem("user"));
@@ -31,8 +32,21 @@ export class RecommendationsComponent implements OnInit {
 
     this.userRecommendations = [];
     this.allRecommendations.forEach(r => {
-      if (r.user == this.user.username) this.userRecommendations.push(r);
+      if (r.user == this.user.username) this.userRecommendations = r.recommendations;
     });
+  }
+
+  prev() {
+    document.getElementById('slider-container').scrollLeft -= 270;
+  }
+
+  next() {
+    document.getElementById('slider-container').scrollLeft += 270;
+  }
+
+  bookDetails(book: Book) {
+    localStorage.setItem("book", JSON.stringify(book));
+    this.router.navigate(["bookDetails"]);
   }
 
   

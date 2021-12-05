@@ -1,1 +1,21 @@
-<p>recommendations works!</p>
+<div class="my-3 text-center" style="font-size: x-large; font-weight: 300;">PREPORUČENE KNJIGE</div>
+<div class="slider-container">
+    <span (click)="prev()" class="control-prev-btn">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+
+    <div id="slider-container" class="slider"> 
+        <div *ngFor="let rec of userRecommendations">
+            <div class="slide" (click)="bookDetails(rec.book)">
+                <img src="../../assets/{{ rec.book.image }}">
+                <div class="title">{{ rec.book.title }}</div>
+                <div class="author">{{ rec.book.author }}</div>
+                <div class="mt-2"><i>Preporuka od: <b>{{ rec.username }}</b></i></div>
+            </div>
+        </div>        
+    </div>
+
+    <span (click)="next()" class="control-next-btn">
+        <i class="fas fa-chevron-right"></i>
+    </span>
+</div>
